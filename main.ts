@@ -42,7 +42,6 @@ while (option != 9) {
                 console.log('|3. Lutar com Pacquiao     |');
                 console.log('|4. Lutar com Saúl         |');
                 console.log('|5. Atributos              |');
-                console.log('|6. Aposentar              |');
                 console.log('|9. Trocar Jogador         |');
                 console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
@@ -74,7 +73,6 @@ while (option != 9) {
                     case 5:
                         console.log(floyd.atributos());
                 }
-                console.log(`Um grande lutador pendurou as luvas`)
                 console.log(floyd.atributos());
 
             }
@@ -90,7 +88,6 @@ while (option != 9) {
                 console.log('|3. Lutar com Pacquiao     |');
                 console.log('|4. Lutar com Floyd        |');
                 console.log('|5. Atributos              |');
-                console.log('|6. Aposentar              |');
                 console.log('|9. Trocar Jogador         |');
                 console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
@@ -123,7 +120,6 @@ while (option != 9) {
                     case 5:
                         console.log(saul.atributos());
                 }
-                console.log(`Um grande lutador pendurou as luvas`)
                 console.log(saul.atributos());
 
             }
@@ -137,7 +133,6 @@ while (option != 9) {
                 console.log('|3. Lutar com Floyd        |');
                 console.log('|4. Lutar com Saúl         |');
                 console.log('|5. Atributos              |');
-                console.log('|6. Aposentar              |');
                 console.log('|9. Trocar Jogador         |');
                 console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
@@ -155,7 +150,7 @@ while (option != 9) {
                         } case 1:
                         console.log("O vencedor foi o Pacquiao");
                         break;
-                        case 2:
+                          case 2:
                         console.log("O vencedor foi o Floyd");
                         break;
                     case 4:
@@ -169,7 +164,6 @@ while (option != 9) {
                     case 5:
                         console.log(pacquiao.atributos());
                 }
-                console.log(`Um grande lutador pendurou as luvas`)
                 console.log(pacquiao.atributos());
 
             }

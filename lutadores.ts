@@ -24,6 +24,7 @@ export class LutadorBase {
             public atributos(): string {
                 return (
                     ("\nNome: " + this.nome) +
+                    ("\nIdade: " + this.idade) +
                     ("\nCategoria: " + this.categoria) +
                     ("\nForça: " + this.forca.toFixed(0)) +
                     ("\nVelocidade: " + this.velocidade.toFixed(0)) +
@@ -35,10 +36,12 @@ export class LutadorBase {
             public treinarGolpes(): void {
                 this.forca += Rando.randomizar(10, 20)
                 this.velocidade += Rando.randomizar(10, 20)
+                this.idade += 1
             }
             public treinarDefesa(): void {
                 this.defesa += Rando.randomizar(10, 20)
                 this.resistencia += Rando.randomizar(10, 20)
+                this.idade += 1
             }
             
             public descansar(): void {
@@ -46,10 +49,11 @@ export class LutadorBase {
                 this.velocidade -= Rando.randomizar(5, 10)
                 this.defesa -= Rando.randomizar(5, 10)
                 this.resistencia -= Rando.randomizar(5, 10)
+                this.idade += 1
             }
             
             public historicoLutas(): void {
-                // aqui seria o historioco de vitorias e derrotas
+                // aqui seria o historico de vitorias e derrotas
             }
             public luta(): void {
                 this.media = this.defesa + this.forca + this.resistencia + this.velocidade / 4
