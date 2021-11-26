@@ -58,9 +58,6 @@ export class LutadorBase {
             public luta(): void {
                 this.media = this.defesa + this.forca + this.resistencia + this.velocidade / 4
             }
-            public aposentar(): boolean {
-                return this.idade >= 40;
-            }
             
         }
             

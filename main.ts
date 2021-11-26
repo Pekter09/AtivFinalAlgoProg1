@@ -34,7 +34,7 @@ while (option != 9) {
     switch (option) {
         case 1:
 
-            while (option != 9 && !floyd.aposentar()) {
+            while (option != 9) {
 
                 console.log(`|+=== Floyd Mayweather ===+|`);
                 console.log('|1. Treinar Golpes         |');
@@ -42,32 +42,37 @@ while (option != 9) {
                 console.log('|3. Lutar com Pacquiao     |');
                 console.log('|4. Lutar com Saúl         |');
                 console.log('|5. Atributos              |');
-                console.log('|9. Trocar Jogador         |');
+                console.log('|9. Aposentar              |');
                 console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
                 console.log(option)
 
                 switch (option) {
                     case 1:
-                        lutadores.forEach((l) => l.treinarGolpes(), console.log(floyd.atributos()));
+                        lutadores.forEach((l) => l.treinarGolpes());
                         break;
                     case 2:
-                        lutadores.forEach((l) => l.treinarDefesa(), console.log(floyd.atributos()));
+                        lutadores.forEach((l) => l.treinarDefesa());
                         break;
                     case 3:
                         while (floyd.luta() >= pacquiao.luta()) {
                         } case 1:
+                        console.log("");
                         console.log("O vencedor foi o Floyd");
+
                         break;
                     case 2:
+                        console.log("");
                         console.log("O vencedor foi o Pacquiao");
                         break;
                     case 4:
                         while (floyd.luta() >= saul.luta()) {
                         } case 1:
+                        console.log("");
                         console.log("O vencedor foi o Floyd");
                         break;
                     case 2:
+                        console.log("");
                         console.log("O vencedor foi o Saúl");
                         break;
                     case 5:
@@ -80,7 +85,7 @@ while (option != 9) {
             break;
         case 2:
 
-            while (option != 9 && !saul.aposentar()) {
+            while (option != 9) {
 
                 console.log(`|+===== Saúl Álvarez =====+|`);
                 console.log('|1. Treinar Golpes         |');
@@ -88,7 +93,7 @@ while (option != 9) {
                 console.log('|3. Lutar com Pacquiao     |');
                 console.log('|4. Lutar com Floyd        |');
                 console.log('|5. Atributos              |');
-                console.log('|9. Trocar Jogador         |');
+                console.log('|9. Aposentar              |');
                 console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
                 console.log(option)
@@ -104,17 +109,21 @@ while (option != 9) {
                     case 3:
                         while (saul.luta() >= pacquiao.luta()) {
                         } case 1:
+                        console.log("");
                         console.log("O vencedor foi o Saúl");
                         break;
                     case 2:
+                        console.log("");
                         console.log("O vencedor foi o Pacquiao");
                         break;
                     case 4:
                         while (saul.luta() >= floyd.luta()) {
                         } case 1:
+                        console.log("");
                         console.log("O vencedor foi o Saúl");
                         break;
                     case 2:
+                        console.log("");
                         console.log("O vencedor foi o Floyd");
                         break;
                     case 5:
@@ -125,7 +134,7 @@ while (option != 9) {
             }
             break;
         case 3:
-            while (option != 9 && !pacquiao.aposentar()) {
+            while (option != 9) {
 
                 console.log(`|+==== Manny Pacquiao ====+|`);
                 console.log('|1. Treinar Golpes         |');
@@ -133,14 +142,14 @@ while (option != 9) {
                 console.log('|3. Lutar com Floyd        |');
                 console.log('|4. Lutar com Saúl         |');
                 console.log('|5. Atributos              |');
-                console.log('|9. Trocar Jogador         |');
+                console.log('|9. Aposentar              |');
                 console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
                 console.log(option)
 
                 switch (option) {
                     case 1:
-                        lutadores.forEach((l) => l.treinarGolpes(), console.log(pacquiao.atributos()));
+                        lutadores.forEach((l) => l.treinarGolpes());
                         break;
                     case 2:
                         lutadores.forEach((l) => l.treinarDefesa(), console.log(pacquiao.atributos()));
@@ -148,17 +157,21 @@ while (option != 9) {
                     case 3:
                         while (pacquiao.luta() >= floyd.luta()) {
                         } case 1:
+                        console.log("");
                         console.log("O vencedor foi o Pacquiao");
                         break;
-                          case 2:
+                    case 2:
+                        console.log("");
                         console.log("O vencedor foi o Floyd");
                         break;
                     case 4:
                         while (pacquiao.luta() >= saul.luta()) {
                         } case 1:
+                        console.log("");
                         console.log("O vencedor foi o Pacquiao");
                         break;
-                        case 2:
+                    case 2:
+                        console.log("");
                         console.log("O vencedor foi o Saúl");
                         break;
                     case 5:
