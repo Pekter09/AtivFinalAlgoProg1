@@ -7,7 +7,7 @@ export const menuInicial =
   console.log("|4. Mostrar Atributos       |"),
   console.log("|9. Sair                    |"),
   console.log("+==========================+|"));
-  
+
 export const menuFloyd =
   (console.log(`|+=== Floyd Mayweather ===+|`),
   console.log("|1. Treinar Golpes         |"),
@@ -36,4 +36,6 @@ export const menuPac =
   console.log("|4. Lutar com Saúl         |"),
   console.log("|5. Atributos              |"),
   console.log("|9. Trocar Jogador         |"),
-  console.log("+=========================+|"));
+  console.log("+=========================+|")
+  );
+

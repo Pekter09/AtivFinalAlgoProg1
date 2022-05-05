@@ -1,11 +1,9 @@
 import prompt from "prompt-sync";
-import Floyd from "./floyd";
-import { LutadorBase } from "./lutadores";
-import Pacquiao from "./pacquiao";
-import { Rando } from "./randow";
-import Saul from "./saul";
-import { menuFloyd, menuInicial, menuPac, menuSaul } from "./menus"
-
+import Floyd from "./src/lutadores/floyd";
+import { LutadorBase } from "./src/lutadorBase/lutadores";
+import Pacquiao from "./src/lutadores/pacquiao";
+import { Rando } from "./src/randow/randow";
+import Saul from "./src/lutadores/saul";
 
 let teclado = prompt();
 let option: number = 0;
@@ -19,6 +17,18 @@ lutadores.push(floyd)
 lutadores.push(saul)
 lutadores.push(pacquiao)
 
+const menuInicial = (
+    console.log(`+===========================+`),
+    console.log(`|Qual lutador você escolhe? |`),
+    console.log('|1. Floyd Mayweather        |'),
+    console.log('|2. Saúl Álvarez            |'),
+    console.log('|3. Manny Pacquiao          |'),
+    console.log('|4. Mostrar Atributos       |'),
+    console.log('|9. Sair                    |'),
+    console.log('+==========================+|')
+)
+
+
 while (option != 9) {
 
     menuInicial
@@ -30,7 +40,14 @@ while (option != 9) {
 
             while (option != 9 && !floyd.aposentar()) {
 
-                menuFloyd
+                console.log(`|+=== Floyd Mayweather ===+|`);
+                console.log('|1. Treinar Golpes         |');
+                console.log('|2. Treinar Defesa         |');
+                console.log('|3. Lutar com Pacquiao     |');
+                console.log('|4. Lutar com Saúl         |');
+                console.log('|5. Atributos              |');
+                console.log('|9. Trocar Jogador         |');
+                console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
                 console.log(option)
 
@@ -69,7 +86,14 @@ while (option != 9) {
 
             while (option != 9 && !saul.aposentar()) {
 
-                menuSaul
+                console.log(`|+===== Saúl Álvarez =====+|`);
+                console.log('|1. Treinar Golpes         |');
+                console.log('|2. Treinar Defesa         |');
+                console.log('|3. Lutar com Pacquiao     |');
+                console.log('|4. Lutar com Floyd        |');
+                console.log('|5. Atributos              |');
+                console.log('|9. Trocar Jogador         |');
+                console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
                 console.log(option)
 
@@ -107,7 +131,14 @@ while (option != 9) {
         case 3:
             while (option != 9 && !pacquiao.aposentar()) {
 
-                menuPac
+                console.log(`|+==== Manny Pacquiao ====+|`);
+                console.log('|1. Treinar Golpes         |');
+                console.log('|2. Treinar Defesa         |');
+                console.log('|3. Lutar com Floyd        |');
+                console.log('|4. Lutar com Saúl         |');
+                console.log('|5. Atributos              |');
+                console.log('|9. Trocar Jogador         |');
+                console.log('+=========================+|');
                 option = +teclado("Escolha uma ação: ");
                 console.log(option)
 
