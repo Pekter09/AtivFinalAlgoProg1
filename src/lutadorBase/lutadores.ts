@@ -1,5 +1,5 @@
 
-import { Rando } from "../../src/randow/randow";
+import { Rando } from "../randow/randow";
 export class LutadorBase {
             protected nome: string;
             protected categoria: string;
